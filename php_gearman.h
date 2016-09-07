@@ -33,6 +33,8 @@ typedef enum {
         GEARMAN_OBJ_CREATED = (1 << 0)
 } gearman_obj_flags_t;
 
+extern zend_class_entry *gearman_task_ce;
+extern zend_object_handlers gearman_task_obj_handlers;
 extern zend_class_entry *gearman_exception_ce;
 
 #define GEARMAN_EXCEPTION(__error, __error_code) { \

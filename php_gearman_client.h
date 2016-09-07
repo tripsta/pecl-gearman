@@ -25,10 +25,8 @@
 #include <libgearman-1.0/interface/status.h>
 #include <libgearman-1.0/status.h>
 
-extern zend_class_entry *gearman_client_ce;
-extern zend_object_handlers gearman_client_obj_handlers;
-
 zend_object *gearman_client_obj_new(zend_class_entry *ce);
+extern zend_object_handlers gearman_client_obj_handlers;
 
 typedef enum {
 	GEARMAN_CLIENT_OBJ_CREATED = (1 << 0)

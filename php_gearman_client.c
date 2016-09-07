@@ -11,6 +11,8 @@
 
 #include "php_gearman_client.h"
 
+extern zend_class_entry *gearman_client_ce;
+
 inline gearman_client_obj *gearman_client_fetch_object(zend_object *obj) {
        return (gearman_client_obj *)((char*)(obj) - XtOffsetOf(gearman_client_obj, std));
 }

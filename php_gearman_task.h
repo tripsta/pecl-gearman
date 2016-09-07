@@ -27,8 +27,6 @@
 #include <libgearman-1.0/status.h>
 
 zend_object *gearman_task_obj_new(zend_class_entry *ce);
-extern zend_class_entry *gearman_task_ce;
-extern zend_object_handlers gearman_task_obj_handlers;
 
 typedef enum {
         GEARMAN_TASK_OBJ_CREATED = (1 << 0),

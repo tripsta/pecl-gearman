@@ -27,6 +27,11 @@
 #include <libgearman-1.0/interface/status.h>
 #include <libgearman-1.0/status.h>
 
+zend_class_entry *gearman_client_ce;
+zend_object_handlers gearman_client_obj_handlers;
+zend_class_entry *gearman_exception_ce;
+zend_class_entry *gearman_task_ce;
+zend_object_handlers gearman_task_obj_handlers;
 
 // TODO - find a better place for this
 static inline zend_object *gearman_worker_obj_new(zend_class_entry *ce);
